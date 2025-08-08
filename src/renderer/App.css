@@ -17,6 +17,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .loading-overlay {
@@ -54,6 +56,46 @@
   margin: 0;
 }
 
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-container > p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.no-file-selected {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-file-selected p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .app-container {
@@ -62,5 +104,14 @@
   
   .main-content {
     height: calc(100vh - 200px);
+    padding: 15px;
+  }
+  
+  .form-container {
+    max-width: 100%;
+  }
+  
+  .form-section {
+    padding: 20px;
   }
 } 
